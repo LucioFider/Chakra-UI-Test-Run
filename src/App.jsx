@@ -1,7 +1,21 @@
+import {
+  Contact,
+  Footer,
+  Hero,
+  Navbar,
+  Projects,
+  Features,
+} from "./components";
+
 function App() {
   return (
     <div>
-      <h1>Chakra UI Crash Project</h1>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Projects />
+      <Footer />
+      <Contact />
     </div>
   );
 }
