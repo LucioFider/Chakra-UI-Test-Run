@@ -1,3 +1,4 @@
+import { Grid, GridItem } from "@chakra-ui/react";
 import {
   Contact,
   Footer,
@@ -9,14 +10,16 @@ import {
 
 function App() {
   return (
-    <div>
-      <Navbar />
+    <Grid>
+      <GridItem>
+        <Navbar />
+      </GridItem>
       <Hero />
       <Features />
       <Projects />
       <Footer />
       <Contact />
-    </div>
+    </Grid>
   );
 }
 
