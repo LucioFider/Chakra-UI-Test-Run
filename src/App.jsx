@@ -1,14 +1,19 @@
 import {
   createBrowserRouter,
-  createRoutesFromElement,
+  createRoutesFromElements,
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Create, Dashboard, Profile } from "./pages";
+
+// layouts and pages
+import RootLayout from "./layouts/RootLayout";
+import Dashboard from "./pages/Dashboard";
+import Create from "./pages/Create";
+import Profile from "./pages/Profile";
 
 // router and routes
 const router = createBrowserRouter(
-  createRoutesFromElement(
+  createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Dashboard />} />
       <Route path="create" element={<Create />} />
