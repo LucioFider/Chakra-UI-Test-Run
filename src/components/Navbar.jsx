@@ -11,7 +11,9 @@ import {
 export default function Navbar() {
   return (
     <Flex as="nav" p="10px" alignItems="center">
-      <Heading as="h1">Solo Tasks</Heading>
+      <Heading as="h1" color="black">
+        Solo Tasks
+      </Heading>
       <Spacer />
 
       <HStack spacing="20px">
